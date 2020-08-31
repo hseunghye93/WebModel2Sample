@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+	<!-- https://goni9071.tistory.com/206 -->
+	
+	<!-- driverClassName="org.mariadb.jdbc.Driver" -->
+	
+	<!-- driverClassName="com.mysql.cj.jdbc.Driver" -->
+	<!-- url="jdbc:mysql://localhost:3306/sample?autoReconnect=true&amp;serverTimezone=UTC" -->
+	<!-- url="jdbc:mysql://localhost:3306/sample?useUnicode=true&amp;useJDBCCompliantTimezoneShift=true&amp;useLegacyDatetimeCode=false&amp;serverTimezone=UTC" -->
+	
+	<Resource
+		name="jdbc/myMariaDB"
+		auth="Container"
+		driverClassName="com.mysql.cj.jdbc.Driver"
+		type="javax.sql.DataSource"
+		url="jdbc:mysql://localhost:3306/sample?autoReconnect=true&amp;serverTimezone=UTC"
+		username="sample"
+		password="sample"
+		maxActive="20"
+		maxIdle="10"
+		maxWait="-1" />
+</Context>
